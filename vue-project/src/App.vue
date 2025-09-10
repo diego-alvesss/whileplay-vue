@@ -15,9 +15,22 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
   </main>
+    <div class="background">
+    <router-view />
+  </div>
 </template>
 
+
 <style scoped>
+.background {
+  background: url('../public/MEDIA/imagens/While Play.png') no-repeat left center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30%;
+}
 header {
   line-height: 1.5;
 }
