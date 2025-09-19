@@ -1,4 +1,11 @@
-# vue-project
+# vue-project WhilePlay 
+Projeto Vue:
+Diego Gomes Alves
+Geovana Clemente Cruz
+Livia Mayumi Hayashida 
+Victor do Vale
+
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -20,6 +27,7 @@ npm install
 
 ```sh
 npm run dev
+Voce sera direcionado á página de login, para acessar a de cadastro clique em fazer cadastro.
 ```
 
 ### Compile and Minify for Production
