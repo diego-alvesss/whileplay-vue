@@ -1,18 +1,16 @@
 <template>
-  <div class="cadastro-bg" @click="handleBackgroundClick">
-    <div class="login-container" @click.stop>
-      <h1>Cadastro</h1>
-      <p>Crie sua conta e comece agora!</p>
-      <form @submit.prevent="handleSubmit">
-        <input type="text" v-model="nome" placeholder="Nome completo" required />
-        <input type="email" v-model="email" placeholder="Email" required />
-        <input type="password" v-model="password" placeholder="Senha" required />
-        <input type="password" v-model="password_confirm" placeholder="Confirme a senha" required />
-        <button type="submit">Cadastrar</button>
-      </form>
-      <div class="footer">
-        <RouterLink to="/login">Já tem conta?</RouterLink>
-      </div>
+  <div class="login-container">
+    <h1>Cadastro</h1>
+    <p>Crie sua conta e comece agora!</p>
+    <form @submit.prevent="handleSubmit">
+      <input type="text" v-model="nome" placeholder="Nome completo" required />
+      <input type="email" v-model="email" placeholder="Email" required />
+      <input type="password" v-model="password" placeholder="Senha" required />
+      <input type="password" v-model="password_confirm" placeholder="Confirme a senha" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+    <div class="footer">
+      <RouterLink to="/login">Já tem conta?</RouterLink>
     </div>
   </div>
 </template>
@@ -53,14 +51,6 @@ export default {
     handleSubmit() {
       // Adicione validação ou requisição AJAX se necessário
       window.location.href = 'login.html';
-    },
-    handleBackgroundClick(event) {
-      const container = this.$el.querySelector('.login-container');
-      if (!container.contains(event.target)) {
-        if (confirm("Deseja voltar para a homepage?")) {
-          window.location.href = "homepage1.html";
-        }
-      }
     }
   }
 };
@@ -73,23 +63,7 @@ export default {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.cadastro-bg {
-  background: url('/MEDIA/imagens/While Play.png') no-repeat center center fixed;
-  background-size: cover;
-  color: #ffffff;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
+
 .login-container {
   background: #707070;
   padding: 2rem;
@@ -98,17 +72,19 @@ export default {
   max-width: 450px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(251, 251, 251, 0.2);
-  cursor: auto;
 }
+
 .login-container h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #000000;
 }
+
 .login-container p {
   color: #000000;
   margin-bottom: 2rem;
 }
+
 .login-container input {
   width: 100%;
   padding: 0.8rem;
@@ -119,9 +95,11 @@ export default {
   color: #000000;
   font-size: 1rem;
 }
+
 .login-container input::placeholder {
   color: #666666;
 }
+
 .login-container button {
   width: 100%;
   padding: 0.8rem;
@@ -134,9 +112,11 @@ export default {
   cursor: pointer;
   transition: transform 0.3s;
 }
+
 .login-container button:hover {
   transform: translateY(-2px);
 }
+
 .login-container a {
   color: #ffffff;
   text-decoration: none;
@@ -144,18 +124,22 @@ export default {
   display: block;
   margin-top: 1rem;
 }
+
 .login-container a:hover {
   text-decoration: underline;
 }
+
 .footer {
   margin-top: 2rem;
   color: #cccccc;
   font-size: 1rem;
 }
+
 .footer a {
   color: #000000;
   text-decoration: none;
 }
+
 .footer a:hover {
   text-decoration: underline;
 }

@@ -3,7 +3,7 @@ import CadastroPage from '../components/whileplay/CadastroPage.vue'
 import LoginPage from '../components/whileplay/login.vue'
 
 const routes = [
-  { path: '/', redirect: '/cadastro' },
+  { path: '/', redirect: '/login' },
   { path: '/cadastro', component: CadastroPage },
   { path: '/login', component: LoginPage }
 ]
