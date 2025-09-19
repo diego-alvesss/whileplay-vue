@@ -15,6 +15,10 @@
   width: 100vw;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 header {
   line-height: 1.5;

@@ -85,6 +85,10 @@ export default {
   cursor: pointer;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .login-container {
   background: #707070;

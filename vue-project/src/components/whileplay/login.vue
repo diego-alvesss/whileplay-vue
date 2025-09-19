@@ -59,6 +59,20 @@ export default {
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+
+/* Remove qualquer marcador de lista */
+ul, ol, li {
+	list-style: none !important;
+	list-style-type: none !important;
+	margin: 0;
+	padding: 0;
+}
+
+/* Remove pseudo-elementos */
+*::before, *::after {
+	content: none !important;
+}
+
 .login-bg {
 	background: url('/MEDIA/imagens/While Play.png') no-repeat left center fixed;
 	background-size: cover;
@@ -71,7 +85,10 @@ export default {
 	padding-left: 30%;
 	cursor: pointer;
 	margin: 0;
-	padding-left: 30%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 .login-container {
 	background: #707070;

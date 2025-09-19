@@ -10,16 +10,35 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden !important;
+  position: fixed;
+}
+
+/* Remove pontos e marcadores de listas */
+ul, ol, li {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove pseudo-elementos que possam criar pontos */
+*::before, *::after {
+  content: none !important;
 }
 
 #app {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   font-weight: normal;
+  overflow: hidden !important;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 a,
