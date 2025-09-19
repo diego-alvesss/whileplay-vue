@@ -1,21 +1,9 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+// Router view will handle the component rendering
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
-    <div class="background">
+  <div class="background">
     <router-view />
   </div>
 </template>
@@ -23,13 +11,10 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <style scoped>
 .background {
-  background: url('../public/MEDIA/imagens/While Play.png') no-repeat left center fixed;
-  background-size: cover;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 30%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 header {
   line-height: 1.5;

@@ -11,7 +11,7 @@
         <button type="submit">Cadastrar</button>
       </form>
       <div class="footer">
-        <a href="login.html">Já tem conta?</a>
+        <RouterLink to="/login">Já tem conta?</RouterLink>
       </div>
     </div>
   </div>
@@ -74,15 +74,17 @@ export default {
   font-family: 'Poppins', sans-serif;
 }
 .cadastro-bg {
-  background: url('../../assets/imagens/While Play.png') no-repeat left center fixed;
+  background: url('/MEDIA/imagens/While Play.png') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 30%;
+  justify-content: center;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 .login-container {
   background: #707070;

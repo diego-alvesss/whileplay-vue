@@ -10,7 +10,7 @@
 			</form>
 			<a href="recuperar_senha.html">Esqueceu sua senha?</a>
 			<div class="footer">
-				<a href="cadastro.html">Não tem login? Faça cadastro</a>
+				<RouterLink to="/cadastro">Não tem login? Faça cadastro</RouterLink>
 			</div>
 		</div>
 	</div>
@@ -60,15 +60,18 @@ export default {
 	font-family: 'Poppins', sans-serif;
 }
 .login-bg {
-	background: url('../../assets/imagens/While Play.png') no-repeat left center fixed;
+	background: url('/MEDIA/imagens/While Play.png') no-repeat left center fixed;
 	background-size: cover;
 	color: #ffffff;
 	height: 100vh;
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	padding-left: 30%;
 	cursor: pointer;
+	margin: 0;
+	padding-left: 30%;
 }
 .login-container {
 	background: #707070;

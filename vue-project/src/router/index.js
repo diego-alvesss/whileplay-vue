@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import CadastroPage from '../components/CadastroPage.vue'
-import LoginPage from '../components/LoginPage.vue'
+import CadastroPage from '../components/whileplay/CadastroPage.vue'
+import LoginPage from '../components/whileplay/login.vue'
 
 const routes = [
   { path: '/', redirect: '/cadastro' },
